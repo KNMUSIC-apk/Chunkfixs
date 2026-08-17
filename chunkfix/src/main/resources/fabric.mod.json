@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "chunkfix",
+  "version": "${version}",
+  "name": "ChunkFix",
+  "description": "Làm mờ chunk xa bằng sương mù tùy chỉnh.",
+  "authors": ["YourName"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/chunkfix/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.chunkfix.ChunkFixMod"]
+  },
+  "mixins": [],
+  "client": [
+    "chunkfix.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1"
+  }
+}
